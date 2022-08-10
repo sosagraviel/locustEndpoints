@@ -1,0 +1,71 @@
+---
+execution:
+- concurrency: '1'
+  executor: locust
+  hold-for: '22'
+  locations:
+    us-central1-a: 1
+  ramp-up: '5'
+  scenario: elliegrid_pills
+local-bzt-version: 1.15.4
+modules:
+  blazemeter:
+    dedicated-ips: false
+  cloud:
+    account: 943147
+    browser-open: none
+    default-location: us-central1-a
+    project: 1092205
+    public-report: true
+    report-name: Elliegrid
+    send-report-email: false
+    test: Assessment flow
+    upload-artifacts: false
+    workspace: 960443
+  consolidator:
+    percentiles:
+    - 0.0
+    - 50.0
+    - 90.0
+    - 95.0
+    - 99.0
+    - 99.9
+    - 100.0
+reporting:
+- module: final-stats
+- module: console
+- module: console
+- failed-labels: true
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
+scenarios:
+  elliegrid_pills:
+    default-address: https://api.elliegrid.inhouse.decemberlabs.com
+    script: elliegrid.py
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+    - conn-all
+  module: monitoring
+settings:
+  default-executor: locust
+  env:
+    CLOUD_THREAD_COUNT: '1'
+    HOLD_FOR: '22'
+    LOCAL_THREAD_COUNT: '1'
+    OBJC_DISABLE_INITIALIZE_FORK_SAFETY: 'YES'
+    RAMP_UP: '5'
+    TAURUS_ARTIFACTS_DIR: /bzt-configs/build/132715
+    THINK-TIME: 2000ms
+    TIME-OUT: 50s
+

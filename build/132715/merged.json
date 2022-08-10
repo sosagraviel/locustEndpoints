@@ -1,0 +1,61 @@
+{
+ "provisioning": "cloud",
+ "settings": {
+  "artifacts-dir": "build/%H%M%S",
+  "default-executor": "locust",
+  "env": {
+   "LOCAL_THREAD_COUNT": 1,
+   "CLOUD_THREAD_COUNT": 1,
+   "RAMP_UP": 5,
+   "HOLD_FOR": 22,
+   "THINK-TIME": "2000ms",
+   "TIME-OUT": "50s"
+  }
+ },
+ "execution": [
+  {
+   "scenario": "elliegrid_pills",
+   "ramp-up": "${RAMP_UP}",
+   "hold-for": "${HOLD_FOR}",
+   "concurrency": {
+    "local": "${LOCAL_THREAD_COUNT}",
+    "cloud": "${CLOUD_THREAD_COUNT}"
+   }
+  }
+ ],
+ "scenarios": {
+  "elliegrid_pills": {
+   "script": "src/elliegrid.py",
+   "default-address": "https://api.elliegrid.inhouse.decemberlabs.com"
+  }
+ },
+ "modules": {
+  "blazemeter": {
+   "dedicated-ips": false
+  },
+  "cloud": {
+   "token": "********",
+   "account": 943147,
+   "workspace": 960443,
+   "project": 1092205,
+   "report-name": "Elliegrid",
+   "test": "Assessment flow",
+   "browser-open": "none",
+   "public-report": true,
+   "send-report-email": false,
+   "upload-artifacts": false
+  }
+ },
+ "reporting": [
+  {
+   "module": "console"
+  },
+  {
+   "module": "final-stats",
+   "summary": true,
+   "percentiles": true,
+   "failed-labels": true,
+   "test-duration": true
+  }
+ ]
+}

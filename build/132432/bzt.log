@@ -1,0 +1,338 @@
+[2022-08-09 13:24:32,737 INFO root] Taurus CLI Tool v1.15.4
+[2022-08-09 13:24:32,737 DEBUG root] Build: 14133 Fri Jul  9 09:34:42 UTC 2021
+[2022-08-09 13:24:32,737 DEBUG root] Extended git info:  7267e07e Release 1.15.4
+[2022-08-09 13:24:32,738 DEBUG root] Command-line options: {'log': '/tmp/artifacts/bzt.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': ['cloud']}
+[2022-08-09 13:24:32,738 DEBUG root] Python: CPython 3.8.10
+[2022-08-09 13:24:32,738 DEBUG root] OS: uname_result(system='Linux', node='c4fc881466f2', release='5.10.47-linuxkit', version='#1 SMP Sat Jul 3 21:51:47 UTC 2021', machine='x86_64', processor='x86_64')
+[2022-08-09 13:24:32,738 DEBUG root] Path to interpreter: /usr/bin/python3
+[2022-08-09 13:24:32,738 DEBUG root] Path to packages: ['/usr/local/bin', '/usr/lib/python38.zip', '/usr/lib/python3.8', '/usr/lib/python3.8/lib-dynload', '/usr/local/lib/python3.8/dist-packages', '/usr/lib/python3/dist-packages']
+[2022-08-09 13:24:32,740 DEBUG root] Default python: None
+[2022-08-09 13:24:32,741 DEBUG root] Default python3: /usr/bin/python3
+[2022-08-09 13:24:32,741 DEBUG root] Using personal config: /root/.bzt-rc
+[2022-08-09 13:24:32,741 INFO root] Starting with configs: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:24:32,741 INFO Engine] Configuring...
+[2022-08-09 13:24:32,742 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2022-08-09 13:24:32,786 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2022-08-09 13:24:32,786 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2022-08-09 13:24:32,787 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2022-08-09 13:24:32,811 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2022-08-09 13:24:32,811 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2022-08-09 13:24:32,812 DEBUG Engine] User configs list: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:24:32,812 DEBUG Engine.Configuration] Configs: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:24:32,815 DEBUG Engine.Configuration] Reading demo-taurus-elliegrid.yml as YAML
+[2022-08-09 13:24:32,822 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2022-08-09 13:24:32,825 DEBUG Engine.Configuration] Configs: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:24:32,827 DEBUG Engine.Configuration] Reading demo-taurus-elliegrid.yml as YAML
+[2022-08-09 13:24:32,833 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2022-08-09 13:24:32,839 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.4&installID=Docker
+[2022-08-09 13:24:32,839 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.4&installID=Docker
+[2022-08-09 13:24:32,841 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2022-08-09 13:24:32,841 INFO Engine] Artifacts dir: /bzt-configs/build/132432
+[2022-08-09 13:24:32,855 DEBUG Engine] New artifact filename: /bzt-configs/build/132432/effective
+[2022-08-09 13:24:32,867 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/132432/effective.yml
+[2022-08-09 13:24:32,899 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/132432/effective.json
+[2022-08-09 13:24:32,904 DEBUG Engine] New artifact filename: /bzt-configs/build/132432/merged.yml
+[2022-08-09 13:24:32,908 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/132432/merged.yml
+[2022-08-09 13:24:32,919 DEBUG Engine] New artifact filename: /bzt-configs/build/132432/merged.json
+[2022-08-09 13:24:32,923 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/132432/merged.json
+[2022-08-09 13:24:32,925 DEBUG Engine] Add existing artifact (move=False): demo-taurus-elliegrid.yml
+[2022-08-09 13:24:32,926 DEBUG Engine] Copying demo-taurus-elliegrid.yml to /bzt-configs/build/132432/demo-taurus-elliegrid.yml
+[2022-08-09 13:24:32,937 DEBUG Engine] Add existing artifact (move=False): /root/.bzt-rc
+[2022-08-09 13:24:32,937 DEBUG Engine] Copying /root/.bzt-rc to /bzt-configs/build/132432/.bzt-rc
+[2022-08-09 13:24:32,948 DEBUG Engine] Set PYTHONPATH to :
+	USER: '/root/.bzt/python-packages/3.8.10' +
+	TEMP: '/bzt-configs/build/132432/python-packages/3.8.10' +
+	CURRENT: ''
+[2022-08-09 13:24:32,948 DEBUG Engine] Content of user packages dir: []
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: LOCAL_THREAD_COUNT=1
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: CLOUD_THREAD_COUNT=1
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: RAMP_UP=5
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: HOLD_FOR=22
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: THINK-TIME=2000ms
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: TIME-OUT=50s
+[2022-08-09 13:24:32,949 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/bzt-configs/build/132432
+[2022-08-09 13:24:32,949 DEBUG root] Closing log handler: /tmp/artifacts/bzt.log
+[2022-08-09 13:24:32,963 DEBUG root] Switched writing logs to /bzt-configs/build/132432/bzt.log
+[2022-08-09 13:24:32,964 DEBUG root] Linting config
+[2022-08-09 13:24:32,968 WARNING root] at path 'execution.0.scenario': scenario 'elliegrid' is used but isn't defined
+[2022-08-09 13:24:32,969 INFO Engine] Preparing...
+[2022-08-09 13:24:32,972 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2022-08-09 13:24:32,973 DEBUG root] Importing module: bzt.modules.aggregator
+[2022-08-09 13:24:33,133 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/aggregator.py'>
+[2022-08-09 13:24:33,134 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2022-08-09 13:24:33,135 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2022-08-09 13:24:33,137 DEBUG root] Importing module: bzt.modules.monitoring
+[2022-08-09 13:24:33,139 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/monitoring.py'>
+[2022-08-09 13:24:33,140 DEBUG Engine] Module config: cloud {'class': 'bzt.modules.blazemeter.CloudProvisioning', 'default-location': 'us-central1-a', 'token': '********', 'account': 943147, 'workspace': 960443, 'project': 1092205, 'report-name': 'Elliegrid', 'test': 'Assessment flow', 'browser-open': 'none', 'public-report': True, 'send-report-email': False, 'upload-artifacts': False}
+[2022-08-09 13:24:33,141 DEBUG root] Importing module: bzt.modules.blazemeter
+[2022-08-09 13:24:33,152 DEBUG easyprocess] version=0.3
+[2022-08-09 13:24:33,154 DEBUG pyvirtualdisplay] version=2.2
+[2022-08-09 13:24:33,155 DEBUG root] Loading class: 'CloudProvisioning' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/blazemeter/__init__.py'>
+[2022-08-09 13:24:33,156 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader', 'dedicated-ips': False}
+[2022-08-09 13:24:33,157 DEBUG root] Importing module: bzt.modules.blazemeter
+[2022-08-09 13:24:33,158 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/blazemeter/__init__.py'>
+[2022-08-09 13:24:33,159 DEBUG Engine.cloud] Installing http client
+[2022-08-09 13:24:33,160 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2022-08-09 13:24:33,161 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2022-08-09 13:24:33,163 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2022-08-09 13:24:33,272 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1828, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1566, in _raise_ssl_error
+    _raise_current_error()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/_util.py", line 57, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 366, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 1243, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+[2022-08-09 13:24:33,275 DEBUG Engine] Failed to check for updates: Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1828, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1566, in _raise_ssl_error
+    _raise_current_error()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/_util.py", line 57, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 366, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 1243, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 728, in _check_updates
+    response = client.request('GET', addr, timeout=10)
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 1250, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://gettaurus.org/updates/?version=1.15.4&installID=Docker failed
+
+[2022-08-09 13:24:33,278 WARNING Engine] Failed to check for updates
+[2022-08-09 13:24:34,167 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 1664
+[2022-08-09 13:24:34,174 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 943147,
+            "name": "Default Account",
+            "thumbnailUrl": null,
+            "salesforce
+[2022-08-09 13:24:34,177 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=943147&enabled=true&limit=100 None
+[2022-08-09 13:24:34,178 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=943147&enabled=true&limit=100
+[2022-08-09 13:24:34,446 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=943147&enabled=true&limit=100 HTTP/1.1" 200 832
+[2022-08-09 13:24:34,453 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 960443,
+            "name": "Default workspace",
+            "userId": 1409497,
+            "created": 
+[2022-08-09 13:24:34,456 DEBUG Engine] Module config: locust {'class': 'bzt.modules.locustio.LocustIOExecutor'}
+[2022-08-09 13:24:34,457 DEBUG root] Importing module: bzt.modules.locustio
+[2022-08-09 13:24:34,470 DEBUG root] Loading class: 'LocustIOExecutor' from <module 'bzt.modules.locustio' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/locustio.py'>
+[2022-08-09 13:24:34,472 DEBUG Engine.cloud.ProjectFinder] Parsed test link: None
+[2022-08-09 13:24:34,473 DEBUG Engine.cloud.ProjectFinder] Treating account name as ID: 943147
+[2022-08-09 13:24:34,474 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2022-08-09 13:24:34,475 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2022-08-09 13:24:34,758 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 1664
+[2022-08-09 13:24:34,763 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 943147,
+            "name": "Default Account",
+            "thumbnailUrl": null,
+            "salesforce
+[2022-08-09 13:24:34,765 DEBUG Engine.cloud.ProjectFinder] Treating workspace name as ID: 960443
+[2022-08-09 13:24:34,766 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=943147&enabled=true&limit=100 None
+[2022-08-09 13:24:34,767 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=943147&enabled=true&limit=100
+[2022-08-09 13:24:35,044 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=943147&enabled=true&limit=100 HTTP/1.1" 200 832
+[2022-08-09 13:24:35,049 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 960443,
+            "name": "Default workspace",
+            "userId": 1409497,
+            "created": 
+[2022-08-09 13:24:35,052 DEBUG Engine.cloud.ProjectFinder] Treating project name as ID: 1092205
+[2022-08-09 13:24:35,054 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=960443&limit=1000 None
+[2022-08-09 13:24:35,055 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/projects?workspaceId=960443&limit=1000
+[2022-08-09 13:24:35,331 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=960443&limit=1000 HTTP/1.1" 200 448
+[2022-08-09 13:24:35,336 DEBUG Engine.cloud] Response [200]: {
+    "limit": 1000,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 1092205,
+            "name": "Default project",
+            "userId": null,
+            "description":
+[2022-08-09 13:24:35,340 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/tests?projectId=1092205&name=Assessment+flow None
+[2022-08-09 13:24:35,342 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/tests?projectId=1092205&name=Assessment+flow
+[2022-08-09 13:24:35,635 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?projectId=1092205&name=Assessment+flow HTTP/1.1" 200 1993
+[2022-08-09 13:24:35,639 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 9888878,
+            "name": "Assessment flow",
+            "isNewTest": true,
+            "userId": 140
+[2022-08-09 13:24:35,647 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/960443 None
+[2022-08-09 13:24:35,651 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces/960443
+[2022-08-09 13:24:35,939 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/960443 HTTP/1.1" 200 None
+[2022-08-09 13:24:36,354 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 960443,
+        "name": "Default workspace",
+        "userId": 1409497,
+        "created": 1629730320,
+        "updated": 1629730320,
+        "enabled": true,
+        "dedicatedIpsEna
+[2022-08-09 13:24:36,378 WARNING Engine] Could not find location at path: elliegrid
+[2022-08-09 13:24:36,382 ERROR root] Config Error: Scenario 'elliegrid' not found in scenarios: dict_keys(['chat_assessment'])
+[2022-08-09 13:24:36,386 DEBUG root] TaurusConfigError: Scenario 'elliegrid' not found in scenarios: dict_keys(['chat_assessment'])
+  File "/usr/local/lib/python3.8/dist-packages/bzt/cli.py", line 274, in perform
+    self.engine.prepare()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 220, in prepare
+    self.__prepare_provisioning()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 631, in __prepare_provisioning
+    self.provisioning.prepare()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/blazemeter/cloud_provisioning.py", line 268, in prepare
+    res_files = self.get_rfiles()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/blazemeter/cloud_provisioning.py", line 116, in get_rfiles
+    executor_rfiles = executor.get_resource_files()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/modules.py", line 415, in get_resource_files
+    files_list.extend(self.resource_files())
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/locustio.py", line 142, in resource_files
+    script = self.get_script_path()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/modules.py", line 218, in get_script_path
+    scenario = self.get_scenario()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/modules.py", line 246, in get_scenario
+    scenario_dict = scenarios.get(label, exc)
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 324, in get
+    raise default
+[2022-08-09 13:24:36,388 INFO Engine] Post-processing...
+[2022-08-09 13:24:36,394 WARNING Engine.cloud] Part of result data might be missed here due to BM API specifics
+[2022-08-09 13:24:36,397 DEBUG Engine.consolidator] Consolidator buffer[0]: dict_keys([])
+[2022-08-09 13:24:36,404 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/132432/effective.yml
+[2022-08-09 13:24:36,436 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/132432/effective.json
+[2022-08-09 13:24:36,439 INFO root] Artifacts dir: /bzt-configs/build/132432
+[2022-08-09 13:24:36,443 WARNING root] Done performing with code: 1
+[2022-08-09 13:24:36,446 DEBUG root] Closing log handler: /bzt-configs/build/132432/bzt.log

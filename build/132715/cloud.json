@@ -1,0 +1,100 @@
+{
+ "modules": {
+  "consolidator": {
+   "percentiles": [
+    0.0,
+    50.0,
+    90.0,
+    95.0,
+    99.0,
+    99.9,
+    100.0
+   ]
+  },
+  "blazemeter": {
+   "dedicated-ips": false
+  },
+  "cloud": {
+   "default-location": "us-central1-a",
+   "account": 943147,
+   "workspace": 960443,
+   "project": 1092205,
+   "report-name": "Elliegrid",
+   "test": "Assessment flow",
+   "browser-open": "none",
+   "public-report": true,
+   "send-report-email": false,
+   "upload-artifacts": false
+  }
+ },
+ "settings": {
+  "default-executor": "locust",
+  "env": {
+   "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES",
+   "LOCAL_THREAD_COUNT": "1",
+   "CLOUD_THREAD_COUNT": "1",
+   "RAMP_UP": "5",
+   "HOLD_FOR": "22",
+   "THINK-TIME": "2000ms",
+   "TIME-OUT": "50s",
+   "TAURUS_ARTIFACTS_DIR": "/bzt-configs/build/132715"
+  }
+ },
+ "reporting": [
+  {
+   "module": "final-stats"
+  },
+  {
+   "module": "console"
+  },
+  {
+   "module": "console"
+  },
+  {
+   "module": "final-stats",
+   "summary": true,
+   "percentiles": true,
+   "failed-labels": true,
+   "test-duration": true
+  }
+ ],
+ "services": [
+  {
+   "module": "monitoring",
+   "local": [
+    {
+     "metrics": [
+      "cpu",
+      "mem",
+      "bytes-sent",
+      "bytes-recv",
+      "disk-read",
+      "disk-write",
+      "disk-space",
+      "engine-loop",
+      "conn-all"
+     ]
+    }
+   ]
+  }
+ ],
+ "execution": [
+  {
+   "scenario": "elliegrid_pills",
+   "ramp-up": "5",
+   "hold-for": "22",
+   "concurrency": "1",
+   "executor": "locust",
+   "locations": {
+    "us-central1-a": 1
+   }
+  }
+ ],
+ "scenarios": {
+  "elliegrid_pills": {
+   "script": "elliegrid.py",
+   "default-address": "https://api.elliegrid.inhouse.decemberlabs.com"
+  }
+ },
+ "local-bzt-version": "1.15.4"
+}

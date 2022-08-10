@@ -1,0 +1,684 @@
+[2022-08-09 13:36:20,552 INFO root] Taurus CLI Tool v1.15.4
+[2022-08-09 13:36:20,552 DEBUG root] Build: 14133 Fri Jul  9 09:34:42 UTC 2021
+[2022-08-09 13:36:20,552 DEBUG root] Extended git info:  7267e07e Release 1.15.4
+[2022-08-09 13:36:20,552 DEBUG root] Command-line options: {'log': '/tmp/artifacts/bzt.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': ['cloud']}
+[2022-08-09 13:36:20,553 DEBUG root] Python: CPython 3.8.10
+[2022-08-09 13:36:20,553 DEBUG root] OS: uname_result(system='Linux', node='f886cc9b7404', release='5.10.47-linuxkit', version='#1 SMP Sat Jul 3 21:51:47 UTC 2021', machine='x86_64', processor='x86_64')
+[2022-08-09 13:36:20,553 DEBUG root] Path to interpreter: /usr/bin/python3
+[2022-08-09 13:36:20,553 DEBUG root] Path to packages: ['/usr/local/bin', '/usr/lib/python38.zip', '/usr/lib/python3.8', '/usr/lib/python3.8/lib-dynload', '/usr/local/lib/python3.8/dist-packages', '/usr/lib/python3/dist-packages']
+[2022-08-09 13:36:20,553 DEBUG root] Default python: None
+[2022-08-09 13:36:20,553 DEBUG root] Default python3: /usr/bin/python3
+[2022-08-09 13:36:20,554 DEBUG root] Using personal config: /root/.bzt-rc
+[2022-08-09 13:36:20,554 INFO root] Starting with configs: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:36:20,554 INFO Engine] Configuring...
+[2022-08-09 13:36:20,554 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2022-08-09 13:36:20,609 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2022-08-09 13:36:20,609 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2022-08-09 13:36:20,610 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2022-08-09 13:36:20,639 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2022-08-09 13:36:20,640 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2022-08-09 13:36:20,640 DEBUG Engine] User configs list: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:36:20,640 DEBUG Engine.Configuration] Configs: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:36:20,646 DEBUG Engine.Configuration] Reading demo-taurus-elliegrid.yml as YAML
+[2022-08-09 13:36:20,653 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2022-08-09 13:36:20,656 DEBUG Engine.Configuration] Configs: ['demo-taurus-elliegrid.yml', '/root/.bzt-rc']
+[2022-08-09 13:36:20,658 DEBUG Engine.Configuration] Reading demo-taurus-elliegrid.yml as YAML
+[2022-08-09 13:36:20,669 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2022-08-09 13:36:20,673 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.4&installID=Docker
+[2022-08-09 13:36:20,673 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.4&installID=Docker
+[2022-08-09 13:36:20,674 INFO Engine] Artifacts dir: /bzt-configs/build/133620
+[2022-08-09 13:36:20,680 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2022-08-09 13:36:20,690 DEBUG Engine] New artifact filename: /bzt-configs/build/133620/effective
+[2022-08-09 13:36:20,697 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/133620/effective.yml
+[2022-08-09 13:36:20,727 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/133620/effective.json
+[2022-08-09 13:36:20,732 DEBUG Engine] New artifact filename: /bzt-configs/build/133620/merged.yml
+[2022-08-09 13:36:20,736 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/133620/merged.yml
+[2022-08-09 13:36:20,742 DEBUG Engine] New artifact filename: /bzt-configs/build/133620/merged.json
+[2022-08-09 13:36:20,746 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/133620/merged.json
+[2022-08-09 13:36:20,747 DEBUG Engine] Add existing artifact (move=False): demo-taurus-elliegrid.yml
+[2022-08-09 13:36:20,747 DEBUG Engine] Copying demo-taurus-elliegrid.yml to /bzt-configs/build/133620/demo-taurus-elliegrid.yml
+[2022-08-09 13:36:20,778 DEBUG Engine] Add existing artifact (move=False): /root/.bzt-rc
+[2022-08-09 13:36:20,779 DEBUG Engine] Copying /root/.bzt-rc to /bzt-configs/build/133620/.bzt-rc
+[2022-08-09 13:36:20,790 DEBUG Engine] Set PYTHONPATH to :
+	USER: '/root/.bzt/python-packages/3.8.10' +
+	TEMP: '/bzt-configs/build/133620/python-packages/3.8.10' +
+	CURRENT: ''
+[2022-08-09 13:36:20,790 DEBUG Engine] Content of user packages dir: []
+[2022-08-09 13:36:20,791 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2022-08-09 13:36:20,791 DEBUG Engine] OS env: LOCAL_THREAD_COUNT=1
+[2022-08-09 13:36:20,791 DEBUG Engine] OS env: CLOUD_THREAD_COUNT=1
+[2022-08-09 13:36:20,791 DEBUG Engine] OS env: RAMP_UP=5
+[2022-08-09 13:36:20,791 DEBUG Engine] OS env: HOLD_FOR=22
+[2022-08-09 13:36:20,791 DEBUG Engine] OS env: THINK-TIME=2000ms
+[2022-08-09 13:36:20,792 DEBUG Engine] OS env: TIME-OUT=50s
+[2022-08-09 13:36:20,792 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/bzt-configs/build/133620
+[2022-08-09 13:36:20,792 DEBUG root] Closing log handler: /tmp/artifacts/bzt.log
+[2022-08-09 13:36:20,812 DEBUG root] Switched writing logs to /bzt-configs/build/133620/bzt.log
+[2022-08-09 13:36:20,814 DEBUG root] Linting config
+[2022-08-09 13:36:20,818 INFO Engine] Preparing...
+[2022-08-09 13:36:20,820 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2022-08-09 13:36:20,821 DEBUG root] Importing module: bzt.modules.aggregator
+[2022-08-09 13:36:20,970 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/aggregator.py'>
+[2022-08-09 13:36:20,972 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2022-08-09 13:36:20,973 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2022-08-09 13:36:20,974 DEBUG root] Importing module: bzt.modules.monitoring
+[2022-08-09 13:36:20,977 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/monitoring.py'>
+[2022-08-09 13:36:20,978 DEBUG Engine] Module config: cloud {'class': 'bzt.modules.blazemeter.CloudProvisioning', 'default-location': 'us-central1-a', 'token': '********', 'account': 811674, 'workspace': 823262, 'project': 945240, 'report-name': 'Elliegrid', 'test': 'Assessment flow', 'browser-open': 'none', 'public-report': True, 'send-report-email': False, 'upload-artifacts': False}
+[2022-08-09 13:36:20,979 DEBUG root] Importing module: bzt.modules.blazemeter
+[2022-08-09 13:36:20,989 DEBUG easyprocess] version=0.3
+[2022-08-09 13:36:20,991 DEBUG pyvirtualdisplay] version=2.2
+[2022-08-09 13:36:20,993 DEBUG root] Loading class: 'CloudProvisioning' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/blazemeter/__init__.py'>
+[2022-08-09 13:36:20,994 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader', 'dedicated-ips': False}
+[2022-08-09 13:36:20,995 DEBUG root] Importing module: bzt.modules.blazemeter
+[2022-08-09 13:36:20,996 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/blazemeter/__init__.py'>
+[2022-08-09 13:36:20,998 DEBUG Engine.cloud] Installing http client
+[2022-08-09 13:36:20,999 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2022-08-09 13:36:21,000 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2022-08-09 13:36:21,001 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2022-08-09 13:36:21,325 DEBUG HTTPClient] Request resulted in exception: Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1828, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1566, in _raise_ssl_error
+    _raise_current_error()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/_util.py", line 57, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 366, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 1243, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+[2022-08-09 13:36:21,333 DEBUG Engine] Failed to check for updates: Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1828, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/SSL.py", line 1566, in _raise_ssl_error
+    _raise_current_error()
+  File "/usr/local/lib/python3.8/dist-packages/OpenSSL/_util.py", line 57, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 366, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 1243, in request
+    return self.session.request(method, url, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='gettaurus.org', port=443): Max retries exceeded with url: /updates/?version=1.15.4&installID=Docker (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 728, in _check_updates
+    response = client.request('GET', addr, timeout=10)
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 1250, in request
+    raise TaurusNetworkError(msg)
+bzt.TaurusNetworkError: Request to https://gettaurus.org/updates/?version=1.15.4&installID=Docker failed
+
+[2022-08-09 13:36:21,336 WARNING Engine] Failed to check for updates
+[2022-08-09 13:36:22,044 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 1660
+[2022-08-09 13:36:22,047 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 811674,
+            "name": "Default Account",
+            "thumbnailUrl": null,
+            "salesforce
+[2022-08-09 13:36:22,051 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=811674&enabled=true&limit=100 None
+[2022-08-09 13:36:22,053 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=811674&enabled=true&limit=100
+[2022-08-09 13:36:22,469 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=811674&enabled=true&limit=100 HTTP/1.1" 200 812
+[2022-08-09 13:36:22,472 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 823262,
+            "name": "Default workspace",
+            "userId": 1266206,
+            "created": 
+[2022-08-09 13:36:22,476 DEBUG Engine] Module config: locust {'class': 'bzt.modules.locustio.LocustIOExecutor'}
+[2022-08-09 13:36:22,477 DEBUG root] Importing module: bzt.modules.locustio
+[2022-08-09 13:36:22,494 DEBUG root] Loading class: 'LocustIOExecutor' from <module 'bzt.modules.locustio' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/locustio.py'>
+[2022-08-09 13:36:22,497 DEBUG Engine.cloud.ProjectFinder] Parsed test link: None
+[2022-08-09 13:36:22,498 DEBUG Engine.cloud.ProjectFinder] Treating account name as ID: 811674
+[2022-08-09 13:36:22,500 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2022-08-09 13:36:22,501 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2022-08-09 13:36:22,865 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 1660
+[2022-08-09 13:36:22,870 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 811674,
+            "name": "Default Account",
+            "thumbnailUrl": null,
+            "salesforce
+[2022-08-09 13:36:22,872 DEBUG Engine.cloud.ProjectFinder] Treating workspace name as ID: 823262
+[2022-08-09 13:36:22,875 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=811674&enabled=true&limit=100 None
+[2022-08-09 13:36:22,876 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=811674&enabled=true&limit=100
+[2022-08-09 13:36:23,140 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=811674&enabled=true&limit=100 HTTP/1.1" 200 832
+[2022-08-09 13:36:23,144 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 823262,
+            "name": "Default workspace",
+            "userId": 1266206,
+            "created": 
+[2022-08-09 13:36:23,147 DEBUG Engine.cloud.ProjectFinder] Treating project name as ID: 945240
+[2022-08-09 13:36:23,148 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=823262&limit=1000 None
+[2022-08-09 13:36:23,148 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/projects?workspaceId=823262&limit=1000
+[2022-08-09 13:36:23,432 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=823262&limit=1000 HTTP/1.1" 200 447
+[2022-08-09 13:36:23,436 DEBUG Engine.cloud] Response [200]: {
+    "limit": 1000,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 945240,
+            "name": "Default project",
+            "userId": null,
+            "description": 
+[2022-08-09 13:36:23,440 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/tests?projectId=945240&name=Assessment+flow None
+[2022-08-09 13:36:23,442 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/tests?projectId=945240&name=Assessment+flow
+[2022-08-09 13:36:23,726 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?projectId=945240&name=Assessment+flow HTTP/1.1" 200 161
+[2022-08-09 13:36:23,731 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [],
+    "request_id": "62f262d82049a"
+}
+[2022-08-09 13:36:23,733 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/823262 None
+[2022-08-09 13:36:23,735 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces/823262
+[2022-08-09 13:36:24,110 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/823262 HTTP/1.1" 200 None
+[2022-08-09 13:36:24,523 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 823262,
+        "name": "Default workspace",
+        "userId": 1266206,
+        "created": 1617588059,
+        "updated": 1617588059,
+        "enabled": true,
+        "dedicatedIpsEna
+[2022-08-09 13:36:24,539 DEBUG Engine.cloud] All resource files are: ['/bzt-configs/src/elliegrid.py']
+[2022-08-09 13:36:24,541 DEBUG Engine.cloud] Replace file names in config: ['/bzt-configs/src/elliegrid.py'] with ['elliegrid.py']
+[2022-08-09 13:36:24,543 DEBUG Engine.cloud] Replaced /bzt-configs/src/elliegrid.py with elliegrid.py
+[2022-08-09 13:36:24,550 DEBUG Engine] New artifact filename: /bzt-configs/build/133620/cloud
+[2022-08-09 13:36:24,556 DEBUG root] Dumping YAML config into /bzt-configs/build/133620/cloud.yml
+[2022-08-09 13:36:24,570 DEBUG root] Dumping JSON config into /bzt-configs/build/133620/cloud.json
+[2022-08-09 13:36:24,573 DEBUG Engine.cloud] Creating new test
+[2022-08-09 13:36:24,575 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests {
+ "name": "Assessment flow",
+ "projectId": 945240,
+ "configuration": {
+  "type": "taurus",
+  "plugins": {
+   "taurus": {
+    "filename": ""
+   }
+  }
+ }
+}
+[2022-08-09 13:36:24,576 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests
+[2022-08-09 13:36:24,948 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests HTTP/1.1" 201 1087
+[2022-08-09 13:36:24,987 DEBUG Engine.cloud] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 11372091,
+        "name": "Assessment flow",
+        "isNewTest": true,
+        "userId": 1266206,
+        "created": 1660052185,
+        "updated": 1660052185,
+        "creatorClient
+[2022-08-09 13:36:25,091 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/tests/11372091/files None
+[2022-08-09 13:36:25,106 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/tests/11372091/files
+[2022-08-09 13:36:25,853 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests/11372091/files HTTP/1.1" 200 96
+[2022-08-09 13:36:25,856 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [],
+    "request_id": "62f262da0b51e"
+}
+[2022-08-09 13:36:25,858 DEBUG Engine.cloud] Test files: []
+[2022-08-09 13:36:25,874 DEBUG Engine.cloud] Uploading files into the test: ['/bzt-configs/src/elliegrid.py']
+[2022-08-09 13:36:25,904 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests/11372091/files b'--===============6284707504326403585==\r\nContent-Disposition: file; name="script"; filename="taurus.yml"\r\nContent-Type: application/octet-stream\r\n\r\n---\nexecution:\n- concurrency: \'1\'\n  executor: locust\n  hold-for: \'22\'\n  locations:\n    us-central1-a: 1\n  ram'
+[2022-08-09 13:36:25,906 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/11372091/files
+[2022-08-09 13:36:27,371 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/11372091/files HTTP/1.1" 201 1211
+[2022-08-09 13:36:27,374 DEBUG Engine.cloud] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 11372091,
+        "isNewTest": true,
+        "name": "Assessment flow",
+        "userId": 1266206,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "hasT
+[2022-08-09 13:36:27,375 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/11372091 {
+ "configuration": {
+  "executionType": null
+ }
+}
+[2022-08-09 13:36:27,377 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/11372091
+[2022-08-09 13:36:27,918 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/11372091 HTTP/1.1" 200 2584
+[2022-08-09 13:36:27,924 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 11372091,
+        "isNewTest": true,
+        "name": "Assessment flow",
+        "userId": 1266206,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "hasT
+[2022-08-09 13:36:27,929 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/11372091 {
+ "shouldSendReportEmail": false
+}
+[2022-08-09 13:36:27,932 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/11372091
+[2022-08-09 13:36:28,519 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/11372091 HTTP/1.1" 200 2586
+[2022-08-09 13:36:28,522 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 11372091,
+        "isNewTest": true,
+        "name": "Assessment flow",
+        "userId": 1266206,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "hasT
+[2022-08-09 13:36:28,524 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/11372091 {
+ "overrideExecutions": []
+}
+[2022-08-09 13:36:28,525 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/11372091
+[2022-08-09 13:36:29,082 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/11372091 HTTP/1.1" 200 2586
+[2022-08-09 13:36:29,087 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 11372091,
+        "isNewTest": true,
+        "name": "Assessment flow",
+        "userId": 1266206,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "hasT
+[2022-08-09 13:36:29,089 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/11372091 {
+ "configuration": {
+  "scriptType": "taurus"
+ }
+}
+[2022-08-09 13:36:29,091 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/11372091
+[2022-08-09 13:36:29,644 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/11372091 HTTP/1.1" 200 2658
+[2022-08-09 13:36:29,646 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 11372091,
+        "isNewTest": true,
+        "name": "Assessment flow",
+        "userId": 1266206,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "hasT
+[2022-08-09 13:36:29,649 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2022-08-09 13:36:29,652 DEBUG root] Importing module: bzt.modules.reporting
+[2022-08-09 13:36:29,655 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/reporting.py'>
+[2022-08-09 13:36:29,657 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2022-08-09 13:36:29,657 DEBUG root] Importing module: bzt.modules.console
+[2022-08-09 13:36:29,660 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/console.py'>
+[2022-08-09 13:36:29,661 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2022-08-09 13:36:29,692 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/133620/effective.yml
+[2022-08-09 13:36:29,735 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/133620/effective.json
+[2022-08-09 13:36:29,741 INFO Engine] Starting...
+[2022-08-09 13:36:29,744 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f262959aa60>
+[2022-08-09 13:36:29,746 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f2629552a30>
+[2022-08-09 13:36:29,748 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f2629542df0>
+[2022-08-09 13:36:29,750 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f26232d6a00>
+[2022-08-09 13:36:29,752 INFO Engine.console] Waiting for results...
+[2022-08-09 13:36:29,756 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f26232e1400>
+[2022-08-09 13:36:29,857 DEBUG Engine] Startup <bzt.modules.blazemeter.cloud_provisioning.CloudProvisioning object at 0x7f2629552160>
+[2022-08-09 13:36:29,860 INFO Engine.cloud.ProjectFinder.CloudTaurusTest] Initiating cloud test with https://a.blazemeter.com ...
+[2022-08-09 13:36:29,862 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests/11372091/start None
+[2022-08-09 13:36:29,864 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/11372091/start
+[2022-08-09 13:36:35,057 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/11372091/start HTTP/1.1" 202 4340
+[2022-08-09 13:36:35,061 DEBUG Engine.cloud] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 63882983,
+        "name": "Assessment flow",
+        "userId": 1266206,
+        "publicToken": null,
+        "ended": null,
+        "lastUpdate": null,
+        "delayedStartReady": fa
+[2022-08-09 13:36:35,066 INFO Engine.cloud] Started cloud test: https://a.blazemeter.com/app/#/masters/63882983
+[2022-08-09 13:36:35,070 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/masters/63882983/public-token {
+ "publicToken": null
+}
+[2022-08-09 13:36:35,072 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/masters/63882983/public-token
+[2022-08-09 13:36:35,365 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/masters/63882983/public-token HTTP/1.1" 201 199
+[2022-08-09 13:36:35,368 DEBUG Engine.cloud] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "publicToken": "arJrMnpcVgCsg67flXp5orP2bz6OsNyme9w7AIpdKxFjCvN2Rs",
+        "new": false
+    },
+    "request_id": "62f262e3b568c"
+}
+[2022-08-09 13:36:35,371 INFO Engine.cloud] Public report link: https://a.blazemeter.com/app/?public-token=arJrMnpcVgCsg67flXp5orP2bz6OsNyme9w7AIpdKxFjCvN2Rs#/masters/63882983/summary
+[2022-08-09 13:36:35,374 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/masters/63882983 {
+ "name": "Elliegrid"
+}
+[2022-08-09 13:36:35,376 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/masters/63882983
+[2022-08-09 13:36:35,695 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/masters/63882983 HTTP/1.1" 200 2836
+[2022-08-09 13:36:35,698 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 63882983,
+        "name": "Elliegrid",
+        "userId": 1266206,
+        "publicToken": "arJrMnpcVgCsg67flXp5orP2bz6OsNyme9w7AIpdKxFjCvN2Rs",
+        "delayedStartReady": false,
+    
+[2022-08-09 13:36:35,706 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/133620/effective.yml
+[2022-08-09 13:36:35,753 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/133620/effective.json
+[2022-08-09 13:36:35,760 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2022-08-09 13:36:36,087 INFO Engine.cloud] Cloud test status: CONFIGURING_DEPENDENCIES
+[2022-08-09 13:36:36,761 INFO Engine.console] Waiting for finish...
+[2022-08-09 13:36:41,266 INFO Engine.cloud] Cloud test status: BOOT_STARTING
+[2022-08-09 13:37:38,058 INFO Engine.cloud] Cloud test status: INIT_SCRIPT
+[2022-08-09 13:37:58,120 INFO Engine.cloud] Cloud test status: TAURUS_ENGINE_READY
+[2022-08-09 13:38:13,158 INFO Engine.cloud] Cloud test status: DATA_RECEIVED
+[2022-08-09 13:38:28,226 INFO Engine.cloud] Cloud test status: TERMINATING
+[2022-08-09 13:38:30,278 WARNING Engine.cloud] Got inconsistent kpi/error data for label: /v1/register/
+[2022-08-09 13:38:30,283 WARNING Engine.cloud] Got inconsistent kpi/error data for label: /v1/register
+[2022-08-09 13:38:30,292 WARNING Engine.cloud] Got inconsistent kpi/error data for label: /v2/authenticate
+[2022-08-09 13:38:40,322 INFO Engine.cloud] Cloud test status: TAURUS BZT DONE
+[2022-08-09 13:38:45,505 INFO Engine.cloud] Cloud test status: ENDED
+[2022-08-09 13:38:45,511 INFO Engine.cloud] Test was stopped in the cloud: ENDED
+[2022-08-09 13:38:46,905 WARNING Engine] Please wait for graceful shutdown...
+[2022-08-09 13:38:46,910 DEBUG root] Leveled up log file verbosity
+[2022-08-09 13:38:46,911 INFO Engine] Shutting down...
+[2022-08-09 13:38:46,914 DEBUG Engine] Current stop reason: None
+[2022-08-09 13:38:46,915 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>}
+[2022-08-09 13:38:46,928 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/133620/effective.yml
+[2022-08-09 13:38:47,014 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/133620/effective.json
+[2022-08-09 13:38:47,024 INFO Engine] Post-processing...
+[2022-08-09 13:38:47,026 WARNING Engine.cloud] Part of result data might be missed here due to BM API specifics
+[2022-08-09 13:38:47,029 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/63882983/full None
+[2022-08-09 13:38:47,030 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/63882983/full
+[2022-08-09 13:38:47,347 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/63882983/full HTTP/1.1" 200 3280
+[2022-08-09 13:38:47,350 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 63882983,
+        "name": "Elliegrid",
+        "userId": 1266206,
+        "publicToken": "arJrMnpcVgCsg67flXp5orP2bz6OsNyme9w7AIpdKxFjCvN2Rs",
+        "ended": 1660052325,
+        "de
+[2022-08-09 13:38:47,352 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/labels?master_id=63882983 None
+[2022-08-09 13:38:47,355 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/labels?master_id=63882983
+[2022-08-09 13:38:47,873 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/labels?master_id=63882983 HTTP/1.1" 200 200
+[2022-08-09 13:38:47,876 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": "ALL",
+            "name": "ALL",
+            "sessions": []
+        }
+    ],
+    "request_id": "62f263682f456"
+}
+[2022-08-09 13:38:47,878 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=1660052303&master_ids%5B%5D=63882983&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL None
+[2022-08-09 13:38:47,879 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=1660052303&master_ids%5B%5D=63882983&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL
+[2022-08-09 13:38:48,282 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/kpis?interval=1&from=1660052303&master_ids%5B%5D=63882983&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL HTTP/1.1" 200 1058
+[2022-08-09 13:38:48,284 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": true,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "62f263689debe",
+    "result": [
+        {
+            "labelId": "b5c7aed7cd2a308523e7d2847b7815909e864b2fd9c4ea88b00d35adb2ecdfd7",
+            "la
+[2022-08-09 13:38:48,287 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/63882983/reports/aggregatereport/data None
+[2022-08-09 13:38:48,289 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/63882983/reports/aggregatereport/data
+[2022-08-09 13:38:48,773 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/63882983/reports/aggregatereport/data HTTP/1.1" 200 3161
+[2022-08-09 13:38:48,777 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": false,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "62f263690c0b1",
+    "result": [
+        {
+            "labelId": "a75f68d8691367103396e6fd74adf4e49812871211d50e868b95b798f77b46ca",
+            "l
+[2022-08-09 13:38:48,780 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/63882983/reports/errorsreport/data?noDataError=false None
+[2022-08-09 13:38:48,781 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/63882983/reports/errorsreport/data?noDataError=false
+[2022-08-09 13:38:49,203 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/63882983/reports/errorsreport/data?noDataError=false HTTP/1.1" 200 2728
+[2022-08-09 13:38:49,207 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": false,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "62f2636973104",
+    "result": [
+        {
+            "labelId": "a75f68d8691367103396e6fd74adf4e49812871211d50e868b95b798f77b46ca",
+            "e
+[2022-08-09 13:38:49,208 WARNING Engine.cloud] Got inconsistent kpi/error data for label: /v1/register/
+[2022-08-09 13:38:49,211 WARNING Engine.cloud] Got inconsistent kpi/error data for label: /v1/register
+[2022-08-09 13:38:49,214 WARNING Engine.cloud] Got inconsistent kpi/error data for label: /v2/authenticate
+[2022-08-09 13:38:49,218 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/labels?master_id=63882983 None
+[2022-08-09 13:38:49,219 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/labels?master_id=63882983
+[2022-08-09 13:38:49,820 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/labels?master_id=63882983 HTTP/1.1" 200 200
+[2022-08-09 13:38:49,822 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": "ALL",
+            "name": "ALL",
+            "sessions": []
+        }
+    ],
+    "request_id": "62f2636a26cff"
+}
+[2022-08-09 13:38:49,824 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=1660052304&master_ids%5B%5D=63882983&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL None
+[2022-08-09 13:38:49,825 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=1660052304&master_ids%5B%5D=63882983&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL
+[2022-08-09 13:38:50,333 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/kpis?interval=1&from=1660052304&master_ids%5B%5D=63882983&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL HTTP/1.1" 200 399
+[2022-08-09 13:38:50,336 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": false,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "62f2636a7d85b",
+    "result": [
+        {
+            "labelId": "b5c7aed7cd2a308523e7d2847b7815909e864b2fd9c4ea88b00d35adb2ecdfd7",
+            "l
+[2022-08-09 13:38:50,338 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/63882983/reports/aggregatereport/data None
+[2022-08-09 13:38:50,344 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/63882983/reports/aggregatereport/data
+[2022-08-09 13:38:50,622 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/63882983/reports/aggregatereport/data HTTP/1.1" 200 3160
+[2022-08-09 13:38:50,630 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": true,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "62f2636b07b4e",
+    "result": [
+        {
+            "labelId": "a75f68d8691367103396e6fd74adf4e49812871211d50e868b95b798f77b46ca",
+            "la
+[2022-08-09 13:38:50,634 DEBUG Engine.consolidator] Consolidator buffer[3]: dict_keys([1660052301, 1660052302, 1660052303])
+[2022-08-09 13:38:50,636 DEBUG Engine.consolidator] Merging into 1660052301
+[2022-08-09 13:38:50,638 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2022-08-09 13:38:50,648 DEBUG Engine.consolidator] Processed datapoint: 1660052301/ConsolidatingAggregator@139801878932016
+[2022-08-09 13:38:50,649 DEBUG Engine.consolidator] Merging into 1660052302
+[2022-08-09 13:38:50,650 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2022-08-09 13:38:50,656 DEBUG Engine.consolidator] Processed datapoint: 1660052302/ConsolidatingAggregator@139801878932016
+[2022-08-09 13:38:50,657 DEBUG Engine.consolidator] Merging into 1660052303
+[2022-08-09 13:38:50,659 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2022-08-09 13:38:50,666 DEBUG Engine.consolidator] Processed datapoint: 1660052303/ConsolidatingAggregator@139801878932016
+[2022-08-09 13:38:50,667 INFO Engine.final-stats] Test duration: 0:02:17
+[2022-08-09 13:38:50,669 INFO Engine.final-stats] Samples count: 54, 64.81% failures
+[2022-08-09 13:38:50,672 INFO Engine.final-stats] Average times: total 0.030, latency 0.000, connect 0.000
+[2022-08-09 13:38:50,675 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|          90.0 |         0.036 |
+|          95.0 |         0.208 |
+|          99.0 |         0.208 |
++---------------+---------------+
+[2022-08-09 13:38:50,677 INFO Engine.final-stats] Request label stats:
++------------------+--------+-------+--------+--------------------------------------------------------------------------------------+
+| label            | status |  succ | avg_rt | error                                                                                |
++------------------+--------+-------+--------+--------------------------------------------------------------------------------------+
+| /v1/register     |  FAIL  | 0.00% |  0.000 | Unauthorized for url: https://api.elliegrid.inhouse.decemberlabs.com/v1/register     |
+| /v1/register/    |  FAIL  | 0.00% |  0.000 | Not Found for url: https://api.elliegrid.inhouse.decemberlabs.com/v1/register/       |
+| /v2/authenticate |  FAIL  | 0.00% |  0.000 | Unauthorized for url: https://api.elliegrid.inhouse.decemberlabs.com/v2/authenticate |
++------------------+--------+-------+--------+--------------------------------------------------------------------------------------+
+[2022-08-09 13:38:50,679 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2022-08-09 13:38:50,681 INFO Engine.final-stats] Test duration: 0:02:17
+[2022-08-09 13:38:50,682 INFO Engine.final-stats] Samples count: 54, 64.81% failures
+[2022-08-09 13:38:50,684 INFO Engine.final-stats] Average times: total 0.030, latency 0.000, connect 0.000
+[2022-08-09 13:38:50,686 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|          90.0 |         0.036 |
+|          95.0 |         0.208 |
+|          99.0 |         0.208 |
++---------------+---------------+
+[2022-08-09 13:38:50,688 INFO Engine.final-stats] Request label stats:
++------------------+--------+-------+--------+--------------------------------------------------------------------------------------+
+| label            | status |  succ | avg_rt | error                                                                                |
++------------------+--------+-------+--------+--------------------------------------------------------------------------------------+
+| /v1/register     |  FAIL  | 0.00% |  0.000 | Unauthorized for url: https://api.elliegrid.inhouse.decemberlabs.com/v1/register     |
+| /v1/register/    |  FAIL  | 0.00% |  0.000 | Not Found for url: https://api.elliegrid.inhouse.decemberlabs.com/v1/register/       |
+| /v2/authenticate |  FAIL  | 0.00% |  0.000 | Unauthorized for url: https://api.elliegrid.inhouse.decemberlabs.com/v2/authenticate |
++------------------+--------+-------+--------+--------------------------------------------------------------------------------------+
+[2022-08-09 13:38:50,690 INFO Engine.final-stats] 7 failed samples: /v1/register
+[2022-08-09 13:38:50,695 INFO Engine.final-stats] 6 failed samples: /v1/register/
+[2022-08-09 13:38:50,699 INFO Engine.final-stats] 6 failed samples: /v2/authenticate
+[2022-08-09 13:38:50,709 DEBUG Engine.Configuration] Dumping YAML config into /bzt-configs/build/133620/effective.yml
+[2022-08-09 13:38:50,749 DEBUG Engine.Configuration] Dumping JSON config into /bzt-configs/build/133620/effective.json
+[2022-08-09 13:38:50,755 INFO root] Artifacts dir: /bzt-configs/build/133620
+[2022-08-09 13:38:50,757 INFO root] Done performing with code: 0
+[2022-08-09 13:38:50,759 DEBUG root] Closing log handler: /bzt-configs/build/133620/bzt.log
